@@ -10,7 +10,7 @@ class App {
     var apiKey = '501750241b6161263d6ad276e7f714'
 
     var meetings = http.get(url + apiKey, (response) => {
-      console.log(response.statusCode);
+      //console.log(response.statusCode);
       callback(response)
     })
 
@@ -22,7 +22,7 @@ class App {
     var apiKey = 'e8141d99d8ebda6b63c11036009e4bcb'
 
     var weather = http.get(url + apiKey, (response) => {
-      console.log(response.statusCode);
+      //console.log(response.statusCode);
       callback(response)
     })
 

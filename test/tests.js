@@ -8,10 +8,11 @@ describe('Given an app to check if a meetup will be rained off', () => {
   describe('When making a call to the meetup.com api', () => {
     it('Then a response is received', (done) => {
         var app = new App()
-        app.checkMeetup( (response) =>  {
+        var callback = (response) =>  {
           expect(response.statusCode).to.equal(200)
           done()
-        })
+        }
+        app.checkMeetup(callback)
     })
   })
 
